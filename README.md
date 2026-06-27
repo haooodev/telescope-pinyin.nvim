@@ -40,12 +40,6 @@ telescope-pinyin.nvim/
 
 ## lazy.nvim
 
-Place this directory somewhere permanent, for example:
-
-```text
-~/.config/nvim/local/telescope-pinyin.nvim
-```
-
 Then add it as a dependency of Telescope:
 
 ```lua
@@ -60,11 +54,8 @@ Then add it as a dependency of Telescope:
       build = "make",
     },
 
-    {
-      dir = vim.fn.stdpath("config")
-        .. "/local/telescope-pinyin.nvim",
-      name = "telescope-pinyin.nvim",
-    },
+    {"haooodev/telescope-pinyin.nvim" }
+
   },
 
   config = function()
